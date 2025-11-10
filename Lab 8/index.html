@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practical 8</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      position: relative;
+    }
+
+    .section {
+      padding: 60px 20px;
+    }
+
+    .courses .btn {
+      margin: 10px;
+    }
+
+    .gallery,
+    .recruiters {
+      text-align: center;
+      padding: 50px 0;
+      background: #f9f9f9;
+    }
+
+    .footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+    }
+
+    .bg-lightgray {
+      background-color: #f5f5f5 !important;
+    }
+
+    #section1,
+    #section2,
+    #section3,
+    #section4,
+    #section5,
+    #section6 {
+      padding-top: 50px;
+      height: auto;
+    }
+
+    .gallery img,
+    .recruiters img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .recruiters img:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery .col-sm-3,
+    .recruiters .col-sm-3 {
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+
+    @media (max-width: 992px) {
+      .gallery img,
+      .recruiters img {
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .col-sm-3 {
+        width: 50%;
+      }
+
+      .gallery img,
+      .recruiters img {
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .col-sm-3 {
+        width: 100%;
+      }
+
+      .gallery img,
+      .recruiters img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid ">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Marwadi University</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#section1">Vision</a></li>
+            <li><a href="#section2">Mission</a></li>
+            <li><a href="#section3">PSOs</a></li>
+            <li><a href="#section4">Courses</a></li>
+            <li><a href="#section5">Gallery</a></li>
+            <li><a href="#section6">Recruiters</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div id="section1" class="container-fluid section bg-lightgray">
+    <center>
+      <h3>Vision</h3>
+    </center>
+    <p class="text-center">
+      To foster an environment that empowers people, organisations and societies through education, ideas, research and training.
+    </p>
+  </div>
+
+  <div id="section2" class="container-fluid section">
+    <center>
+      <h3>Mission</h3>
+    </center>
+    <ul>
+      <li>To provide quality education and thereby bring social transformation.</li>
+      <li>To create leaders through innovation and entrepreneurship.</li>
+      <li>To cultivate the culture of research advancements.</li>
+      <li>To imbibe universal consciousness.</li>
+      <li>To stimulate growth through industrial and international partnerships.</li>
+    </ul>
+  </div>
+
+  <div id="section3" class="container-fluid section bg-lightgray">
+    <center>
+      <h3>Program Specific Outcomes (PSOs)</h3>
+    </center>
+    <ol>
+      <li>Apply knowledge to build efficient software systems.</li>
+      <li>Use modern tools to solve real-world technical challenges.</li>
+      <li>Work professionally in teams with leadership and communication skills.</li>
+    </ol>
+  </div>
+
+  <div id="section4" class="container-fluid section courses text-center">
+    <h3>Courses Offered</h3>
+    <button class="btn btn-default">Engineering and Technology</button>
+    <button class="btn btn-default">Science</button>
+    <button class="btn btn-default">Management Studies</button>
+    <button class="btn btn-default">Computer Applications</button>
+    <button class="btn btn-default">Physiotherapy</button>
+    <button class="btn btn-default">Arts</button>
+    <button class="btn btn-default">Law</button>
+    <button class="btn btn-default">Pharmacy</button>
+    <button class="btn btn-default">Nursing</button>
+  </div>
+
+  <div id="section5" class="container-fluid gallery bg-lightgray">
+    <h3>Image Gallery of Events</h3>
+    <div class="row">
+      <div class="col-sm-3">
+        <a href="images/Marwadi University.png" target="_blank">
+          <img src="images/Marwadi University.png" class="img-responsive" alt="Marwadi University">
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="images/Marwadi University.png" target="_blank">
+          <img src="images/Marwadi University.png" class="img-responsive" alt="Marwadi University">
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="images/Marwadi University.png" target="_blank">
+          <img src="images/Marwadi University.png" class="img-responsive" alt="Marwadi University">
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="images/Marwadi University.png" target="_blank">
+          <img src="images/Marwadi University.png" class="img-responsive" alt="Marwadi University">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="section6" class="container-fluid gallery">
+    <h3>Top Recruiters</h3>
+    <div class="row">
+      <div class="col-sm-3">
+        <a href="images/adani-1.png" target="_blank">
+          <img src="images/adani-1.png" class="img-responsive" alt="Adani">
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="images/Amazon.png" target="_blank">
+          <img src="images/Amazon.png" class="img-responsive" alt="Amazon">
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="images/ibm.png" target="_blank">
+          <img src="images/ibm.png" class="img-responsive" alt="IBM">
+        </a>
+      </div>
+      <div class="col-sm-3">
+        <a href="images/capgemini.png" target="_blank">
+          <img src="images/capgemini.png" class="img-responsive" alt="Capgemini">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 My College. All rights reserved.</p>
+  </div>
+</body>
+</html>
